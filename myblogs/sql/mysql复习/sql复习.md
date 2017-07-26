@@ -90,3 +90,11 @@ select a.user_name,a.over ,b.over from user1 a LEFT JOIN user2 b ON a.user_name 
 -表1 left join  表二 on 1.=2.  左外连接以左边表为准,用where 条件过滤
 
 ![](http://i.imgur.com/Sx3yEGH.png)
+
+# 使用join更新表
+
+UPDATE user1 a JOIN (select b.`user_name`  from user1 a  INNER JOIN  user2 b on a.`user_name` = b.`user_name`) c
+on a.user_name = c.user_name SET a.over = '齐天大圣' 
+
+其中用到子查询语句 select b.`user_name`  from user1 a  INNER JOIN  user2 b on a.`user_name` = b.`user_name` 
+
