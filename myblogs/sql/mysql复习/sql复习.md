@@ -98,3 +98,88 @@ on a.user_name = c.user_name SET a.over = '齐天大圣'
 
 其中用到子查询语句 select b.`user_name`  from user1 a  INNER JOIN  user2 b on a.`user_name` = b.`user_name` 
 
+![](http://i.imgur.com/wI0K1Ax.png)
+
+
+ -- 查询时间 0.004s
+select  a.`user_name` ,a.`over` ,(select b.over from user2 b where a.user_name =b.user_name) as overd  
+from user1 a 
+
+--  JOIN 优化 查询时间 0.003
+
+select  a.`user_name` ,a.`over` ,b.`over` as over2 from user1 a LEFT JOIN user2 b
+on a.user_name = b.user_name
+
+代码部分截图:
+
+![](http://i.imgur.com/U3yPvn5.png)
+
+
+#聚合子查询优化
+
+![](http://i.imgur.com/AQkZXSc.png)
+
+
+创建表的脚本
+
+CREATE TABLE `NewTable` (
+
+`id`  int NOT NULL ,
+
+`user_id`  int NOT NULL ,
+
+`timestr`  timestamp NULL ON UPDATE CURRENT_TIMESTAMP ,
+
+`kills`  int NULL ,
+
+PRIMARY KEY (`id`)
+
+) ENGINE=InnoDB AUTO_INCREMENT=1;
+
+
+添加语句脚本
+
+INSERT INTO `mooc`.`user_kills` (`id`, `user_id`, `timestr`, `kills`) VALUES('1', '2', '2017-07-27 21:54:02', '10');
+
+INSERT INTO `mooc`.`user_kills` (`id`, `user_id`, `timestr`, `kills`) VALUES ('2', '2', '2017-07-20 21:54:27', '2');
+
+INSERT INTO `mooc`.`user_kills` (`id`, `user_id`, `timestr`, `kills`) VALUES ('3', '2', '2017-07-12 21:54:39', '12');
+
+INSERT INTO `mooc`.`user_kills` (`id`, `user_id`, `timestr`, `kills`) VALUES ('4', '4', '2017-07-27 21:54:57', '3');
+
+INSERT INTO `mooc`.`user_kills` (`id`, `user_id`, `timestr`, `kills`) VALUES ('5', '2', '2017-07-26 21:55:13', '5');
+
+INSERT INTO `mooc`.`user_kills` (`id`, `user_id`, `timestr`, `kills`) VALUES ('6', '2', '2017-07-19 21:55:27', '1');
+
+INSERT INTO `mooc`.`user_kills` (`id`, `user_id`, `timestr`, `kills`) VALUES ('7', '3', '2017-07-19 21:55:42', '20');
+
+INSERT INTO `mooc`.`user_kills` (`id`, `user_id`, `timestr`, `kills`) VALUES ('8', '2', '2017-07-12 21:55:56', '10');
+
+INSERT INTO `mooc`.`user_kills` (`id`, `user_id`, `timestr`, `kills`) VALUES ('9', '2', '2017-07-26 21:56:09', '17');
+
+![](http://i.imgur.com/AVyV6VK.png)
+
+
+--  聚合查询 
+
+-- 查询出四人组合中打怪 最多的日期  0.001s
+
+select  a.`user_name`,a.`over` ,b.kills from user1 a  LEFT JOIN  user_kills  b on a.id = b.user_id
+
+where b.kills=( select max(kills) from user_kills c WHERE c.user_id = b.user_id)  
+
+
+ -- join 使用子查询
+
+select a.`user_name`,a.`over`,b.kills from user1 a join user_kills b  on a.id = b.user_id
+
+join user_kills c ON c.user_id = b.user_id
+
+GROUP BY  b.timestr,a.user_name ,a.over HAVING b.kills = MAX(c.kills)
+
+ 数据量大时两者的区别就出来的了
+
+![](http://i.imgur.com/3pzUmgQ.png)
+
+
+
