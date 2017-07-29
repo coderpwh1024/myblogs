@@ -183,3 +183,93 @@ GROUP BY  b.timestr,a.user_name ,a.over HAVING b.kills = MAX(c.kills)
 
 
 
+#SQL开发技巧 行列转换
+
+如何进行行列转换
+
+如何生成唯一序列号
+
+如何删除重复数据
+
+
+#1.如何进行行列转换
+
+需要进行行列转换的场景
+
+报表统计
+
+汇总显示
+
+ 二行二列
+
+select  a.`user_name` 姓名,  sum(b.kills) as  数量 from user1 a  JOIN user_kills b  on  b.`user_id` = a.id
+GROUP BY a.`user_name`
+
+
+
+select     sum(b.kills) as 悟空   from user1 a  JOIN user_kills b  on  b.`user_id` = a.id
+ where  a.`user_name` = '悟空'
+
+select     sum(b.kills) as 八戒   from user1 a  JOIN user_kills b  on  b.`user_id` = a.id
+ where  a.`user_name` = '八戒'
+
+select     sum(b.kills) as 沙僧   from user1 a  JOIN user_kills b  on  b.`user_id` = a.id
+ where  a.`user_name` = '沙僧'
+
+ cross join  交集
+
+select * from (
+
+select     sum(b.kills) as 悟空   from user1 a  JOIN user_kills b  on  b.`user_id` = a.id
+ where  a.`user_name` = '悟空'
+) a CROSS JOIN
+
+(
+select     sum(b.kills) as 八戒   from user1 a  JOIN user_kills b  on  b.`user_id` = a.id
+ where  a.`user_name` = '八戒'
+) b CROSS JOIN
+
+(
+select     sum(b.kills) as 沙僧   from user1 a  JOIN user_kills b  on  b.`user_id` = a.id
+ where  a.`user_name` = '沙僧'
+) c 
+
+ case when 方式
+
+select 
+sum(case WHEN user_name='悟空' THEN kills END) as '悟空',
+sum(case WHEN user_name='八戒' then kills END) as '八戒',
+sum(case when user_name='沙僧' then kills END ) as '沙僧'
+from user1 a JOIN user_kills b where a.id = b.user_id
+
+
+![](http://i.imgur.com/3RdOPDh.jpg)
+
+如图：
+
+![](http://i.imgur.com/u397AdH.png)
+
+如图:
+
+![](http://i.imgur.com/fjWUjBq.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
