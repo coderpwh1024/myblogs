@@ -255,6 +255,95 @@ from user1 a JOIN user_kills b where a.id = b.user_id
 
 
 
+#如何生成唯一序列号
+
+ 需要使用唯一序列号的场景
+ 
+ 数据库主键
+ 
+ 业务序列号如发票号，车票号，订单号等...
+
+生成序列号的方法
+
+ ![](http://i.imgur.com/YFgMlQD.png)
+
+如何选择生成序列号的方式
+
+优先选择系统提供的序列号生成方式
+
+在特殊情况下可以使用SQL方式生成序列号
+
+用sql 来生成特殊的序列号
+
+需求:生成订单序列号，并且订单号的格式如下
+
+YYYYMMDDNNNNNNM  如201505120000003
+
+用SQL来生成特殊的序列号
+
+![](http://i.imgur.com/AjyUjPC.png)
+
+如何处理重复的数据
+ 
+ 产生数据重复的原因
+
+人为原因，如重复录入数据，重复提交 等...
+
+系统原因:由于系统升级或设计的原因使原来可以重复的数据变为
+不能重复了
+
+
+如何查询数据是否重复？
+
+利用group by 和 havinng 从句处理
+
+1. 创建测试表
+
+
+create TABLE user1_test(
+
+id int auto_increment  not null,
+
+user_name VARCHAR(3),
+
+over varchar(5),
+
+mobile varchar(100),
+
+primary KEY(id)
+
+)ENGINE = INNODB DEFAULT CHARSET=utf8;
+
+
+2. 添加语句值测试表
+
+INSERT into  user1_test(user_name,over,mobile)
+
+select user_name, over,mobile from user1 LIMIT 2 ;
+
+3.选出重复的语句
+
+select user_name, over ,COUNT(*) from user1_test GROUP BY user_name ,over HAVING COUNT(*)>1;
+
+![](http://i.imgur.com/W4HseJj.png)
+
+
+4.删除重复的语句
+
+DELETE a from user1_test a JOIN(
+
+select user_name, over ,COUNT(*),MAX(id) as id   from user1_test GROUP BY 
+
+user_name ,over HAVING COUNT(*)>1
+
+) b on a.user_name = b.user_name where a.id<b.id
+
+![](http://i.imgur.com/Y9KGgg4.png)
+
+
+
+
+
 
 
 
