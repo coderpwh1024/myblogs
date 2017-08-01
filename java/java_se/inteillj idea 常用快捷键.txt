@@ -1,0 +1,17 @@
+inteillj idea 常用快捷键
+
+1. 自导导入jar import语句 Alt+enter
+
+2.get set toString() ,equal()，方法的快捷键 alt+insert 
+ 
+3.复制类的全路径 Ctrl+Shift+c
+
+4.复制类的包名路径: Ctrl+Shift+alt+c，也就是 copy reference
+
+5.根据类名来创建对应的测试类: Ctrl+Shift+t
+
+6.删除当前行 Ctrl+y  
+
+ 
+
+
