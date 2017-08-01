@@ -340,6 +340,27 @@ user_name ,over HAVING COUNT(*)>1
 
 ![](http://i.imgur.com/Y9KGgg4.png)
 
+![](http://i.imgur.com/G0fFFjK.png)
+
+#如何在子查询中匹配两个值
+
+ 什么是子查询？
+
+当一个查询是另一个查询的条件是，称之为子查询。!
+
+常见的子查询使用场景
+
+使用子查询可以避免由于子查询中的数据产生的重复
+
+使用子查询更符合语意，更好理解
+
+ ![](http://i.imgur.com/xCFxIK0.png)
+
+
+
+
+
+
 
 
 
