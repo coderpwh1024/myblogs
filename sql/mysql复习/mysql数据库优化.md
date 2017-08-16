@@ -7,3 +7,10 @@
     mysql数据优化方向
 
 ![](http://i.imgur.com/6sh7O5o.png)
+
+
+     数据库慢日志
+![](http://i.imgur.com/ClmluKa.png)
+
+![](http://i.imgur.com/p9Zad5d.png)
+
