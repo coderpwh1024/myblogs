@@ -65,6 +65,23 @@ Count() 查询的正确方法
 
 ![](http://i.imgur.com/9wvb1yN.png)
 
+# 索引优化
+
+    如何选择合适的列建立索引
+
+![](http://i.imgur.com/TVd3gVG.png)
+
+![](http://i.imgur.com/KCzI5BU.png)
+
+![](http://i.imgur.com/Ali2awd.png)
+
+![](http://i.imgur.com/Zl3Biar.png)
+
+
+
+
+
+
 
 
 
