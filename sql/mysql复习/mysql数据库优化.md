@@ -127,6 +127,29 @@ Count() 查询的正确方法
 
 ![](http://i.imgur.com/16G5DXJ.png)
 
+##
+
+#数据系统优化
+
+![](http://i.imgur.com/Wc7xUMF.png)
+
+![](http://i.imgur.com/9OstNRE.png)
+
+![](http://i.imgur.com/lCf5kFn.png)
+
+![](http://i.imgur.com/2HcXlOB.png)
+
+##
+
+#数据库硬件优化
+
+![](http://i.imgur.com/NXyjCWX.png)
+
+![](http://i.imgur.com/AEKQprB.png)
+
+![](http://i.imgur.com/ul84Hzq.png)
+
+
 
 
 
