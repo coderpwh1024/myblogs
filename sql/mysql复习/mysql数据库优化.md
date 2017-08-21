@@ -77,6 +77,61 @@ Count() 查询的正确方法
 
 ![](http://i.imgur.com/Zl3Biar.png)
 
+##
+
+#数据库结构优化
+
+ 数据库优化，选择合适数据类型
+
+![](http://i.imgur.com/kpkstnN.png)
+
+![](http://i.imgur.com/fqABWoa.png)
+
+![](http://i.imgur.com/0nT3a0C.png)
+
+##
+
+数据库优化，范式与反范式优化
+
+![](http://i.imgur.com/BU0xJjI.png)
+
+![](http://i.imgur.com/Ha2SjfQ.png)
+
+![](http://i.imgur.com/1ydfvj4.png)
+
+
+##
+
+垂直拆分和水平拆分
+
+![](http://i.imgur.com/i3grwRN.png)
+
+表拆分前：
+
+![](http://i.imgur.com/HQV27YM.png)
+
+![](http://i.imgur.com/TLGwjPQ.png)
+
+表拆分后:
+
+![](http://i.imgur.com/noq99dq.png)
+
+![](http://i.imgur.com/2lyDv8R.png)
+
+
+水平拆分
+
+![](http://i.imgur.com/TxMEP2F.png)
+
+![](http://i.imgur.com/KoBqrPA.png)
+
+![](http://i.imgur.com/16G5DXJ.png)
+
+
+
+
+
+
 
 
 
