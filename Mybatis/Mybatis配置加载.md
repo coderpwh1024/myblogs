@@ -128,3 +128,11 @@
 ```
     <select id="queryMetaList" resultType="Map" statementType="STATEMENT">Select * from emp where name = ${employeeName} ORDER BY ${columnName}</select>   
 ```
+其次关于mybatis 中的ongal
+
+![](http://i.imgur.com/uao6Xaa.png)
+
+![](http://i.imgur.com/SoGit3G.png)
+
+更多关于Mybatis 中OGNL表达式 [http://blog.csdn.net/isea533/article/details/50061705](http://blog.csdn.net/isea533/article/details/50061705 "ognl")
+

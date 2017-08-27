@@ -1,7 +1,7 @@
-#Mybatis 复习
+# Mybatis 复习 #
 
 
-##案列：
+**案列：**
 
 ![](http://i.imgur.com/0U10vWD.png)
 
@@ -13,8 +13,8 @@
 
 ##code:
 
-
- `package com.imooc.servlet;
+```
+ package com.imooc.servlet;
 
 import java.io.IOException;
 import java.sql.Connection;
@@ -108,7 +108,7 @@ public class ListServlet extends HttpServlet{
 	
 
 }
-`
+```
 
 页面效果:
 
