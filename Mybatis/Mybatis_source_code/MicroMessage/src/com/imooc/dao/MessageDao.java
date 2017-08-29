@@ -12,17 +12,15 @@ import java.util.Map;
 
 import org.apache.ibatis.session.SqlSession;
 import org.apache.log4j.Logger;
-import org.apache.log4j.chainsaw.Main;
-
 import com.imooc.bean.Message;
 import com.imooc.db.DBAccess;
 
 /**
- * ºÍmessage±íÏà¹ØµÄÊý¾Ý¿â²Ù×÷
+ * ï¿½ï¿½messageï¿½ï¿½ï¿½ï¿½Øµï¿½ï¿½ï¿½ï¿½Ý¿ï¿½ï¿½ï¿½ï¿½
  */
 public class MessageDao {
 	/**
-	 * Mybatis·½Ê½
+	 * Mybatisï¿½ï¿½Ê½
 	 * 
 	 * @param command
 	 * @param description
@@ -37,7 +35,7 @@ public class MessageDao {
 			message.setCommand(command);
 			message.setDescription(description);
 			sqlSession = dbaccess.getSqlSession();
-			// Í¨¹ýsqlSessionÖ´ÐÐSQLÓï¾ä
+			// Í¨ï¿½ï¿½sqlSessionÖ´ï¿½ï¿½SQLï¿½ï¿½ï¿½
 			messageList = sqlSession.selectList("Message.queryMessageList", message);
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -52,7 +50,7 @@ public class MessageDao {
 	}
 
 	/**
-	 * µ¥ÌõÉ¾³ý
+	 * ï¿½ï¿½ï¿½ï¿½É¾ï¿½ï¿½
 	 * 
 	 * @param id
 	 */
@@ -61,7 +59,7 @@ public class MessageDao {
 		SqlSession sqlSession = null;
 		try {
 			sqlSession = dbaccess.getSqlSession();
-			// Í¨¹ýSqlSessionÖ´ÐÐsqlÓï¾ä
+			// Í¨ï¿½ï¿½SqlSessionÖ´ï¿½ï¿½sqlï¿½ï¿½ï¿½
 			sqlSession.delete("Message.deleteOne", id);
 			sqlSession.commit();
 		} catch (IOException e) {
@@ -81,7 +79,7 @@ public class MessageDao {
 		SqlSession sqlSession = null;
 		try {
 			sqlSession = dbaccess.getSqlSession();
-			// Í¨¹ýSqlSessionÖ´ÐÐsqlÓï¾ä
+			// Í¨ï¿½ï¿½SqlSessionÖ´ï¿½ï¿½sqlï¿½ï¿½ï¿½
 			sqlSession.delete("Message.deleteBath", ids);
 			sqlSession.commit();
 		} catch (IOException e) {
@@ -95,21 +93,24 @@ public class MessageDao {
 
 	}
 	
-	// ÓÃÓÚ²âÊÔ SqlSession ÊÇ·ñÅÜÍ¨
+	// ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ SqlSession ï¿½Ç·ï¿½ï¿½ï¿½Í¨
 	public static void main(String[] args) {
 		MessageDao messageDao = new MessageDao();
 		messageDao.queryMessageList("", "");
 		Map<String, Message> messageMap = new HashMap<String, Message>();
-		Logger log = null;
+		messageMap.put("key", new Message());
+//		ResultSet rs ;
+//        rs.getMetaData().getColumnName(column);
+        
 	}
 
 	/**
-	 * JDBCÊµÏÖ ¸ù¾Ý²éÑ¯Ìõ¼þ²éÑ¯ÏûÏ¢ÁÐ±í
+	 * JDBCÊµï¿½ï¿½ ï¿½ï¿½ï¿½Ý²ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¯ï¿½ï¿½Ï¢ï¿½Ð±ï¿½
 	 */
 	/*
 	 * public List<Message> queryMessageList(String command, String description)
-	 * { List<Message> messageList = new ArrayList<Message>(); try { // ¼ÓÔØÊý¾Ý¿âÆô¶¯
-	 * Class.forName("com.mysql.jdbc.Driver"); // »ñÈ¡Çý¶¯Á¬½Ó¶ÔÏó Connection conn =
+	 * { List<Message> messageList = new ArrayList<Message>(); try { // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý¿ï¿½ï¿½ï¿½ï¿½ï¿½
+	 * Class.forName("com.mysql.jdbc.Driver"); // ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¶ï¿½ï¿½ï¿½ Connection conn =
 	 * DriverManager.getConnection("jdbc:mysql://localhost:3306/micro_message",
 	 * "root", "root");
 	 * 
@@ -125,11 +126,11 @@ public class MessageDao {
 	 * sql.append(" and description like '%'?'%'"); paramList.add(description);
 	 * }
 	 * 
-	 * // Ô¤±àÒë¶ÔÏó PreparedStatement statement =
+	 * // Ô¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ PreparedStatement statement =
 	 * conn.prepareStatement(sql.toString()); for (int i = 0; i <
 	 * paramList.size(); i++) { statement.setString(i + 1, paramList.get(i)); }
 	 * 
-	 * // Ö´ÐÐsql,·µ»Ø½á¹û¼¯ ResultSet rs = statement.executeQuery(); while (rs.next())
+	 * // Ö´ï¿½ï¿½sql,ï¿½ï¿½ï¿½Ø½ï¿½ï¿½ï¿½ï¿½ ResultSet rs = statement.executeQuery(); while (rs.next())
 	 * { Message message = new Message(); messageList.add(message);
 	 * message.setId(rs.getString("ID"));
 	 * message.setCommand(rs.getString("COMMAND"));

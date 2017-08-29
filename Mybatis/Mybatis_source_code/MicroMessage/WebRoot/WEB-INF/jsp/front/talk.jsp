@@ -27,7 +27,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<div class="talk_title"><span>正在与公众号对话</span></div>
 			<div class="talk_record">
 				<div id="jp-container" class="jp-container">
-					
 				</div>
 			</div>
 			

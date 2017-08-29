@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Command">
+   <resultMap type="com.imooc.bean.Command" id="Command">
+       <id column="C_ID" jdbcType="INTEGER" property="id"/>
+       <result column="NAME" jdbcType="VARCHAR" property="name"/>
+       <result column="DESCRIPTION" jdbcType="VARCHAR" property="description"/>
+       <!-- 注意 list 用collection -->
+       <collection property="contentList" resultMap="CommandContent.Content"/>
+       </resultMap>
+       
+  <!-- <select id="queryCommandList" parameterType="com.imooc.bean.Command" resultMap="Command">
+   select a.ID C_ID , a.NAME,a.DESCRIPTION,b.Id,b.CONTENT,b.COMMAND_ID
+    from COMMAND a left join COMMAND_CONTENT b
+    on  a.ID = b.COMMAND_ID
+     <where>
+         <if test="name!=null and !&quot;&quot;.equals(description.trim())">
+              and  a.Name= #{name}
+             </if>
+             <if test="descriiption !=null and !&quot;&quot;.equals(descritpion.trim())">
+                and a.DESCRIPTION like '%' #{description} '%'
+                </if>  
+         </where>
+  </select> -->
+  
+   <select id="queryCommandList" parameterType="com.imooc.bean.Command" resultMap="Command">
+    select a.ID C_ID,a.NAME,a.DESCRIPTION,b.ID,b.CONTENT,b.COMMAND_ID
+    from COMMAND a left join COMMAND_CONTENT b
+    on a.ID=b.COMMAND_ID
+    <where>
+    	<if test="name != null and !&quot;&quot;.equals(name.trim())">
+	    	and a.NAME=#{name}
+	    </if>
+	    <if test="description != null and !&quot;&quot;.equals(description.trim())">
+	    	and a.DESCRIPTION like '%' #{description} '%'
+	    </if>
+    </where>
+  </select>
+</mapper>

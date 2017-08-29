@@ -46,6 +46,8 @@
      <!-- mappers映射器,使用类路径查找资源  -->
    <mappers>
     <mapper resource="com/imooc/conf/sqlxml/Message.xml"/>
+    <mapper resource="com/imooc/conf/sqlxml/Command.xml"/>
+    <mapper resource="com/imooc/conf/sqlxml/CommandContent.xml"/>
   </mappers>
 
 </configuration>

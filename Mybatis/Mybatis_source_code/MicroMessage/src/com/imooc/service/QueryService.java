@@ -1,50 +1,48 @@
 package com.imooc.service;
-
 import java.util.List;
-
+import java.util.Random;
+import com.imooc.bean.Command;
+import com.imooc.bean.CommandContent;
 import com.imooc.bean.Message;
+import com.imooc.dao.CommandDao;
 import com.imooc.dao.MessageDao;
 import com.imooc.util.Iconst;
 
 /**
- * ²éÑ¯Ïà¹ØÒµÎñ¹¦ÄÜ
- * 
- * @author ÅíÎÄºÆ
- *
+ * æŸ¥è¯¢ç›¸å…³çš„ä¸šåŠ¡åŠŸèƒ½
  */
 public class QueryService {
-
-	public List<Message> queryMessageList(String command, String description) {
+	public List<Message> queryMessageList(String command,String description) {
 		MessageDao messageDao = new MessageDao();
-		return messageDao.queryMessageList(command, description);
+		// æŸ¥è¯¢å¹¶è¿”å›ç»“æœ
+		return messageDao.queryMessageList(command,description);
 	}
 
 	/**
-	 * Í¨¹ıÖ¸Áî²éÑ¯×Ô¶¯»Ø¸´¹¦ÄÜ
-	 * 
-	 * @param command
-	 * @return
+	 * é€šè¿‡æŒ‡ä»¤æŸ¥è¯¢è‡ªåŠ¨å›å¤çš„å†…å®¹
+	 * @param command æŒ‡ä»¤
+	 * @return è‡ªåŠ¨å›å¤çš„å†…å®¹
 	 */
 	public String queryByCommand(String command) {
-		MessageDao messageDao = new MessageDao();
-		List<Message> messageList = null;
-		if (Iconst.HELP_COMMAND.equals(command)) {
-			messageList = messageDao.queryMessageList(null, null);
+		CommandDao commandDao = new CommandDao();
+		List<Command> commandList;
+		if(Iconst.HELP_COMMAND.equals(command)) {
+			commandList = commandDao.queryCommandList(null, null);
 			StringBuilder result = new StringBuilder();
-			for (int i = 0; i < messageList.size(); i++) {
-				if (i != 0) {
+			for(int i = 0; i < commandList.size(); i++) {
+				if(i != 0) {
 					result.append("<br/>");
 				}
-				result.append("»Ø¸´[" + messageList.get(i).getCommand() + "]¿ÉÒÔ²é¿´" + messageList.get(i).getDescription());
+				result.append("å›å¤[" + commandList.get(i).getName() + "]å¯ä»¥æŸ¥çœ‹" + commandList.get(i).getDescription());
 			}
 			return result.toString();
 		}
-		messageList = messageDao.queryMessageList(command, null);
-		if (messageList.size() > 0) {
-			return messageList.get(0).getContent();
+		commandList = commandDao.queryCommandList(command, null);
+		if(commandList.size() > 0) {
+			List<CommandContent> contentList = commandList.get(0).getContentList();
+			int i = new Random().nextInt(contentList.size());
+			return contentList.get(i).getContent();
 		}
 		return Iconst.NO_MATCHING_CONTENT;
-
 	}
-
 }
