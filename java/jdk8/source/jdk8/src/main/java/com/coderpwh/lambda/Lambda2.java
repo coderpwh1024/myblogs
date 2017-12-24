@@ -18,7 +18,7 @@ public class Lambda2 {
 
     interface  PersonFactory<P extends  Person>{
 
-       P create(String firstName,String lastName);
+       P create(String firstName, String lastName);
     }
 
     public static void main(String[] args) {
