@@ -15,19 +15,52 @@ public class Atomic1 {
     private static AtomicInteger atomicInt = new AtomicInteger(0);
 
     public static void main(String[] args) {
-           testIncrement();
+//        testIncrement();
+        testAccumulate();
+        testupdate();
 
     }
 
-    private static void testIncrement(){
+    private static void testIncrement() {
         atomicInt.set(0);
         ExecutorService executorService = Executors.newFixedThreadPool(2);
-        IntStream.range(0,NUM_INCREMENTS)
-                .forEach(i->executorService.submit(atomicInt::incrementAndGet));
+        IntStream.range(0, NUM_INCREMENTS)
+                .forEach(i -> executorService.submit(atomicInt::incrementAndGet));
 
-         ConcurrentUtils.stop(executorService);
+        ConcurrentUtils.stop(executorService);
 
-         System.out.format("Increment: Expected=%d; Is=%d\n",NUM_INCREMENTS,atomicInt.get());
+        System.out.format("Increment: Expected=%d; Is=%d\n", NUM_INCREMENTS, atomicInt.get());
 
     }
+
+    private static void testAccumulate() {
+        atomicInt.set(0);
+        ExecutorService executorService = Executors.newFixedThreadPool(2);
+
+        IntStream.range(0, NUM_INCREMENTS)
+                .forEach(i -> {
+                    Runnable task = () -> atomicInt.accumulateAndGet(i, (n, m) -> n + m);
+                    executorService.submit(task);
+                });
+        ConcurrentUtils.stop(executorService);
+        System.out.format("Accumulate: %d\n", atomicInt.get());
+
+    }
+
+    private static void testupdate() {
+        atomicInt.set(0);
+
+        ExecutorService executorService = Executors.newFixedThreadPool(2);
+        IntStream.range(0, NUM_INCREMENTS)
+                .forEach(i -> {
+                    Runnable task = () -> atomicInt.updateAndGet(n -> n + 2);
+                    executorService.submit(task);
+                });
+        ConcurrentUtils.stop(executorService);
+        System.out.format("Update:%d\n", atomicInt.get());
+
+
+    }
+
+
 }
