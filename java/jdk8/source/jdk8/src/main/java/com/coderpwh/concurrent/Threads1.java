@@ -1,0 +1,60 @@
+package com.coderpwh.concurrent;
+
+import java.util.concurrent.TimeUnit;
+
+/**
+ * Created by coderpwh on 2018/1/11.
+ */
+public class Threads1 {
+    public static void main(String[] args) {
+
+//        test1();
+//        test2();
+          test3();
+    }
+
+    // java中 如果有其他线程，会先执行主线程
+    private static void test1() {
+        Runnable runnable = () -> {
+            String threadName = Thread.currentThread().getName();
+            System.out.println("Hello " + threadName);
+        };
+        runnable.run();
+        Thread thread = new Thread();
+        thread.start();
+        System.out.println("Done!");
+    }
+
+
+    private static void test2() {
+        Runnable runnable = () -> {
+            try {
+                System.out.println("Foo:" + Thread.currentThread().getName());
+                Thread.sleep(1000);
+                System.out.println("Bar:" + Thread.currentThread().getName());
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+        };
+        Thread thread = new Thread(runnable);
+        thread.start();
+    }
+
+    private static void test3(){
+        Runnable runnable = () ->{
+            try {
+                System.out.println("Foo:"+Thread.currentThread().getName());
+                TimeUnit.SECONDS.sleep(1);
+                System.out.println("Bar:"+Thread.currentThread().getName());
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+        };
+        Thread thread  = new Thread(runnable);
+        thread.start();
+
+    }
+
+}
