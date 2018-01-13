@@ -8,8 +8,8 @@ import java.util.concurrent.*;
 public class Executors3 {
 
     public static void main(String[] args) throws InterruptedException {
-//        test1();
-//        test2();
+          test1();
+         test2();
          test3();
 
     }
