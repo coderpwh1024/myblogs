@@ -1,5 +1,7 @@
 package com.coderpwh.concurrent;
 
+import com.google.common.collect.Lists;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.*;
@@ -9,11 +11,12 @@ import java.util.concurrent.*;
  */
 public class Executors3 {
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException, ExecutionException {
 //        test1();
 //        test2();
 //        test3();
-        test4();
+//        test4();
+        test5();
 
     }
 
@@ -77,6 +80,29 @@ public class Executors3 {
                 }).forEach(System.out::println);
         executorService.shutdown();
 
+    }
+
+
+    private static void test5() throws ExecutionException, InterruptedException {
+
+        ExecutorService executorService = Executors.newWorkStealingPool();
+
+        List<Callable<String>> callables = Lists.newArrayList(callable("task1", 2), callable("task2", 1), callable("task3", 3));
+
+        String result = executorService.invokeAny(callables);
+
+        System.out.println(result);
+
+        executorService.shutdown();
+
+
+    }
+
+    private static Callable<String> callable(String result, long sleepSeconds) {
+        return () -> {
+            TimeUnit.SECONDS.sleep(sleepSeconds);
+            return result;
+        };
     }
 
 
