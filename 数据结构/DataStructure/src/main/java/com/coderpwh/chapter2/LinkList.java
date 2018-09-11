@@ -69,8 +69,21 @@ public class LinkList implements Ilist {
         return p.data;
     }
 
-    public void insert(int i, Object x) throws Exception {
 
+    // 带头结点的单链表
+    public void insert(int i, Object x) throws Exception {
+        Node p = head;
+        int j = -1;
+        while (p != null && j < i - 1) {
+            p = p.next;
+            ++j;
+        }
+        if (j > i - 1 || p == null) {
+            throw new Exception("插入位置不合法!");
+        }
+        Node s = new Node(x);
+        s.next = p.next;
+        p.next = s;
     }
 
     public void remove(int i) throws Exception {
