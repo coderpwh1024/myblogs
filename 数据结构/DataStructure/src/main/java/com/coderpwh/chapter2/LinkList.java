@@ -86,6 +86,30 @@ public class LinkList implements Ilist {
         p.next = s;
     }
 
+    public void insert2(int i, Object x) throws Exception {
+        Node p = head;
+        int j = 0;
+        while (p != null && j < i - 1) {
+            p = p.next;
+            ++j;
+        }
+        if (j > i || p == null) {
+            throw new Exception("插入位置不合理!");
+        }
+        Node s = new Node(x);
+        // 表头位置
+        if (i == 0) {
+            s.next = head;
+            head = s;
+        } else {   // 表中或表末位置
+            s.next = p.next;
+            p.next = s;
+        }
+
+
+    }
+
+
     public void remove(int i) throws Exception {
 
     }
