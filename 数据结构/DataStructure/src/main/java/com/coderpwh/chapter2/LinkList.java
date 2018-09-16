@@ -74,34 +74,41 @@ public class LinkList implements Ilist {
     public void insert(int i, Object x) throws Exception {
         Node p = head;
         int j = -1;
+        // 寻找第i个结点的前驱
         while (p != null && j < i - 1) {
             p = p.next;
             ++j;
         }
-        if (j > i - 1 || p == null) {
+
+        // 判断插入的位置不合法
+        if (p == null || j > i - 1) {
             throw new Exception("插入位置不合法!");
         }
+        // 新的结点
         Node s = new Node(x);
+        // 修改链表结构
         s.next = p.next;
         p.next = s;
     }
 
+
+    // 不带头结点操作
     public void insert2(int i, Object x) throws Exception {
         Node p = head;
         int j = 0;
+        // 寻找第i个结点的前驱
         while (p != null && j < i - 1) {
             p = p.next;
-            ++j;
+            ++j;   // 此时 ++在j前
         }
-        if (j > i || p == null) {
-            throw new Exception("插入位置不合理!");
-        }
+        // 创建一个新的结点
         Node s = new Node(x);
-        // 表头位置
+
+        // 插入表头位置时
         if (i == 0) {
             s.next = head;
             head = s;
-        } else {   // 表中或表末位置
+        } else {   // 表中或表末
             s.next = p.next;
             p.next = s;
         }
@@ -109,8 +116,22 @@ public class LinkList implements Ilist {
 
     }
 
-
+    // 带头结点删除
     public void remove(int i) throws Exception {
+        Node p = head;
+        int j = -1;
+
+        // 查找第i个结点的前驱结点
+        while (p != null && j < i - 1) {
+            ++j;
+        }
+        // 判断不合法的删除
+        if (p == null || j > i - 1) {
+            throw new Exception("删除位置不合法！");
+        }
+
+        // 修改链表结构
+        p.next = p.next.next;
 
     }
 
