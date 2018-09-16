@@ -1,5 +1,7 @@
 package com.coderpwh.chapter2;
 
+import java.util.Scanner;
+
 /**
  * 单向链表
  */
@@ -9,10 +11,10 @@ public class LinkList implements Ilist {
     public Node head;
 
     public LinkList() {
-
+        head = new Node();   // 初始化头结点
     }
 
-    public LinkList(int n, boolean Order) {
+    public LinkList(int n, boolean Order) throws Exception {
         this();
         if (Order) {
             create1(n);
@@ -22,13 +24,19 @@ public class LinkList implements Ilist {
     }
 
     // 用尾插法顺序建立单链表，其中n为单链表的结点个数
-    public void create1(int n) {
-
+    public void create1(int n) throws Exception {
+        Scanner sc = new Scanner(System.in);
+        for (int j = 0; j < n; j++) {
+            insert(0, sc.nextInt());
+        }
     }
 
     // 用头插法逆位顺序建立单链表，其中n为单链表的结点个数
-    public void create2(int n) {
-
+    public void create2(int n) throws Exception {
+        Scanner sc = new Scanner(System.in);
+        for (int j = 0; j < n; j++) {
+            insert(length(), sc.nextInt());
+        }
     }
 
 
@@ -79,7 +87,6 @@ public class LinkList implements Ilist {
             p = p.next;
             ++j;
         }
-
         // 判断插入的位置不合法
         if (p == null || j > i - 1) {
             throw new Exception("插入位置不合法!");
