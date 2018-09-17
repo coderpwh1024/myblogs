@@ -27,7 +27,7 @@ public class LinkList implements Ilist {
     public void create1(int n) throws Exception {
         Scanner sc = new Scanner(System.in);
         for (int j = 0; j < n; j++) {
-            insert(0, sc.nextInt());
+            insert(length(), sc.next());
         }
     }
 
@@ -35,7 +35,7 @@ public class LinkList implements Ilist {
     public void create2(int n) throws Exception {
         Scanner sc = new Scanner(System.in);
         for (int j = 0; j < n; j++) {
-            insert(length(), sc.nextInt());
+            insert(0, sc.next());
         }
     }
 
@@ -136,7 +136,6 @@ public class LinkList implements Ilist {
         if (p == null || j > i - 1) {
             throw new Exception("删除位置不合法！");
         }
-
         // 修改链表结构
         p.next = p.next.next;
 
@@ -161,7 +160,7 @@ public class LinkList implements Ilist {
     public void display() {
         Node node = head.next;
         while (node != null) {
-            System.out.println(node.data + " ");
+            System.out.print(node.data + " ");
             node = node.next;
         }
         System.out.println();

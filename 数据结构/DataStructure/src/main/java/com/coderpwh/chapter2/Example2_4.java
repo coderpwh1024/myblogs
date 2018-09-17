@@ -27,6 +27,7 @@ public class Example2_4 {
                 } else {
                     ++order;
                 }
+                q = q.next;
             }
             p = p.next;
         }
