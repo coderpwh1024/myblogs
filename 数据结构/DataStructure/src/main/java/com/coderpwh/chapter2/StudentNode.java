@@ -17,7 +17,7 @@ public class StudentNode {
 
     public double math;
 
-    public StudentNode() {
+    public StudentNode(int maxSize, int n) {
         this(0, null, null, 0.0, 0.0);
     }
 
