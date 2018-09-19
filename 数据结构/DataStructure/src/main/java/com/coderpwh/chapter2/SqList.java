@@ -11,7 +11,6 @@ public class SqList implements Ilist {
     public SqList(int maxSie) {
         curLen = 0;
         listElem = new Object[maxSie];
-        curLen = maxSie;
     }
 
     public void clear() {
@@ -47,9 +46,9 @@ public class SqList implements Ilist {
         }
         for (int j = curLen; j > i; j--) {
             listElem[j] = listElem[j - 1];
-            listElem[i] = x;
-            curLen++;
         }
+        listElem[i] = x;
+        curLen++;
     }
 
     public void remove(int i) throws Exception {
