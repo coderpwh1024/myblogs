@@ -7,6 +7,9 @@ import java.util.Scanner;
  */
 public class StudentManagSystem extends SqList {
 
+    public StudentManagSystem(int maxSie) {
+        super(maxSie);
+    }
 
     // 顺序结构
     public StudentManagSystem(int maxSize, int n) throws Exception {
@@ -24,51 +27,12 @@ public class StudentManagSystem extends SqList {
         }
     }
 
-    public static void main(String[] args) throws Exception {
-
-        int maxSize = 1000;
-        Scanner sc = new Scanner(System.in);
-        System.out.println("请输入学生的总数:");
-        int n = sc.nextInt();
-        System.out.println("请按学号，姓名，性别，大学英语和高等数学的顺序输入学生信息:");
-        StudentManagSystem L = new StudentManagSystem(maxSize, n);
-        L.display();
-        System.out.println("请输入需要查询的学生的学号:");
-//        L.displayNode((StudentNode) L.get(sc.nextInt()));
-        L.displayNode(L.get(sc.nextInt()));
-
-
-        System.out.println("请输入需要删除学生的学号:");
-        L.remove(sc.nextInt());
-        System.out.println("删除成功!");
-        L.display();
-
-        System.out.println("请输入需要增加的学生信息:");
-        L.insert(new StudentNode(sc));
-        L.display();
-
-
-    }
-
-    @Override
-    public StudentNode get(int number) throws Exception {
-        System.out.println(length());
-        for (int i = 0; i < length(); i++) {
-            StudentNode node = (StudentNode) super.get(i);
-            if (node.number == number) {
-                return node;
-            }
-        }
-        throw new Exception("学号" + number + "不存在");
-    }
-
     // 重载父类的方法，表尾插入一个学生信息
     public void insert(StudentNode node) throws Exception {
         super.insert(this.length(), node);
     }
 
     //  重写父类的remove方法
-    @Override
     public void remove(int number) throws Exception {
         for (int i = 0; i < length(); i++) {
             StudentNode node = (StudentNode) super.get(i);
@@ -80,12 +44,13 @@ public class StudentManagSystem extends SqList {
         throw new Exception("学号" + number + "不存在");
     }
 
-    @Override
+
     public void display() {
         for (int i = 0; i < length(); i++) {
             try {
                 StudentNode node = (StudentNode) super.get(i);
             } catch (Exception e) {
+
             }
 
         }
@@ -95,6 +60,29 @@ public class StudentManagSystem extends SqList {
     public void displayNode(StudentNode node) {
         System.out.println("学号:" + node.number + "姓名:" + node.name + "性别:" + node.sex
                 + "大学英语成绩:" + node.english + "高等数学成绩:" + node.math);
+    }
+
+    public static void main(String[] args) throws Exception {
+
+        int maxSize = 1000;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("请输入学生的总数:");
+        int n = sc.nextInt();
+        System.out.println("请按学号，姓名，性别，大学英语和高等数学的顺序输入学生信息:");
+        StudentManagSystem L = new StudentManagSystem(maxSize, n);
+        L.display();
+        System.out.println("请输入需要查询的学生的学号:");
+        L.displayNode((StudentNode) L.get(sc.nextInt()));
+        System.out.println("请输入需要删除学生的学号:");
+        L.remove(sc.nextInt());
+        System.out.println("删除成功!");
+        L.display();
+
+        System.out.println("请输入需要增加的学生信息:");
+        L.insert(new StudentNode(sc));
+        L.display();
+
+
     }
 
 
