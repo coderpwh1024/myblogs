@@ -13,7 +13,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="DuLNode.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DuLNode.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/coderpwh/chapter2/DuLNode.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="294">
@@ -21,6 +21,23 @@
               <folding>
                 <element signature="e#170#171#0" expanded="true" />
                 <element signature="e#196#197#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DuLinkList.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/coderpwh/chapter2/DuLinkList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+              <folding>
+                <element signature="e#145#146#0" expanded="true" />
+                <element signature="e#173#174#0" expanded="true" />
+                <element signature="e#200#201#0" expanded="true" />
+                <element signature="e#224#225#0" expanded="true" />
+                <element signature="e#460#461#0" expanded="true" />
+                <element signature="e#484#485#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -57,6 +74,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/coderpwh/chapter2/StudentNode.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/coderpwh/chapter2/StudentManagSystem.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/coderpwh/chapter2/DuLNode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/coderpwh/chapter2/DuLinkList.java" />
       </list>
     </option>
   </component>
@@ -384,12 +402,12 @@
       <workItem from="1537090568585" duration="7252000" />
       <workItem from="1537195445585" duration="3099000" />
       <workItem from="1537281546304" duration="3001000" />
-      <workItem from="1537454452639" duration="637000" />
+      <workItem from="1537454452639" duration="1310000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27106000" />
+    <option name="totallyTimeSpent" value="27779000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
@@ -784,6 +802,21 @@
           <folding>
             <element signature="e#170#171#0" expanded="true" />
             <element signature="e#196#197#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/coderpwh/chapter2/DuLinkList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding>
+            <element signature="e#145#146#0" expanded="true" />
+            <element signature="e#173#174#0" expanded="true" />
+            <element signature="e#200#201#0" expanded="true" />
+            <element signature="e#224#225#0" expanded="true" />
+            <element signature="e#460#461#0" expanded="true" />
+            <element signature="e#484#485#0" expanded="true" />
           </folding>
         </state>
       </provider>
