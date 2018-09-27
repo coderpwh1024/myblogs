@@ -57,6 +57,17 @@ public class DuLinkList implements Ilist {
     }
 
     public void remove(int i) throws Exception {
+        DuLNode p = head.next;
+        int j = 0;
+        while (!p.equals(head) && j < i) {
+            p = p.next;
+            ++j;
+        }
+        if (j != i) {
+            throw new Exception("删除位置不合理!");
+        }
+        p.prior.next = p.next;
+        p.next.prior = p.prior;
 
     }
 
@@ -65,6 +76,10 @@ public class DuLinkList implements Ilist {
     }
 
     public void display() {
-
+        DuLNode node = head.next;
+        while (!node.equals(head)) {
+            System.out.print(node.data + " ");
+        }
+        System.out.println();
     }
 }

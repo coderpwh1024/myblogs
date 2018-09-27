@@ -29,15 +29,15 @@
       <file leaf-file-name="DuLinkList.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/coderpwh/chapter2/DuLinkList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="49" column="16" lean-forward="false" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
+            <state relative-caret-position="448">
+              <caret line="82" column="27" lean-forward="false" selection-start-line="82" selection-start-column="27" selection-end-line="82" selection-end-column="27" />
               <folding>
                 <element signature="e#510#511#0" expanded="true" />
                 <element signature="e#538#539#0" expanded="true" />
                 <element signature="e#565#566#0" expanded="true" />
                 <element signature="e#589#590#0" expanded="true" />
-                <element signature="e#1212#1213#0" expanded="true" />
-                <element signature="e#1236#1237#0" expanded="true" />
+                <element signature="e#1496#1497#0" expanded="true" />
+                <element signature="e#1520#1521#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -403,12 +403,12 @@
       <workItem from="1537195445585" duration="3099000" />
       <workItem from="1537281546304" duration="3001000" />
       <workItem from="1537454452639" duration="1808000" />
-      <workItem from="1538058335020" duration="1923000" />
+      <workItem from="1538058335020" duration="2532000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30200000" />
+    <option name="totallyTimeSpent" value="30809000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
@@ -496,8 +496,8 @@
             <element signature="e#538#539#0" expanded="true" />
             <element signature="e#565#566#0" expanded="true" />
             <element signature="e#589#590#0" expanded="true" />
-            <element signature="e#1212#1213#0" expanded="true" />
-            <element signature="e#1236#1237#0" expanded="true" />
+            <element signature="e#1496#1497#0" expanded="true" />
+            <element signature="e#1520#1521#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -835,15 +835,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/coderpwh/chapter2/DuLinkList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="49" column="16" lean-forward="false" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
+        <state relative-caret-position="448">
+          <caret line="82" column="27" lean-forward="false" selection-start-line="82" selection-start-column="27" selection-end-line="82" selection-end-column="27" />
           <folding>
             <element signature="e#510#511#0" expanded="true" />
             <element signature="e#538#539#0" expanded="true" />
             <element signature="e#565#566#0" expanded="true" />
             <element signature="e#589#590#0" expanded="true" />
-            <element signature="e#1212#1213#0" expanded="true" />
-            <element signature="e#1236#1237#0" expanded="true" />
+            <element signature="e#1496#1497#0" expanded="true" />
+            <element signature="e#1520#1521#0" expanded="true" />
           </folding>
         </state>
       </provider>
