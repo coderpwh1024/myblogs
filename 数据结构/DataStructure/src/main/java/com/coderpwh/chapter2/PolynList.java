@@ -17,4 +17,17 @@ public class PolynList extends LinkList {
         }
     }
 
+    public void insert(PolynNode e) throws Exception {
+
+        int j = 0;
+        while (j < length()) {
+            PolynNode t = (PolynNode) get(j);
+            if (t.expn > e.expn) {
+                break;
+            }
+            j++;
+        }
+        insert(j, e);
+    }
+
 }
