@@ -101,6 +101,18 @@ public class PolynList extends LinkList {
         return LA;
     }
 
+    public void display() {
+        for (int i = 0; i < length(); i++) {
+            try {
+                PolynNode e = (PolynNode) get(i);
+                System.out.println("系数为:" + e.coef + " 指数为:" + e.expn);
+            } catch (Exception e1) {
+                e1.printStackTrace();
+            }
+        }
+    }
+
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("请输入A多项式的项数:");
