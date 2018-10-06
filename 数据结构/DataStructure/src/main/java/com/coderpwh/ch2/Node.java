@@ -11,12 +11,12 @@ public class Node {
     // 后续结点的引用
     public Node next;
 
-    public  Node(){
-
+    public Node() {
+        this(null, null);
     }
 
-    public Node(Object data){
-        this(data,null);
+    public Node(Object data) {
+        this(data, null);
     }
 
     public Node(Object data, Node next) {
