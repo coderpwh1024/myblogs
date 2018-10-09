@@ -1,7 +1,7 @@
 package com.coderpwh.chapter3;
 
 /**
- * 栈的实现类
+ * 顺序栈的实现类
  */
 public class SqStack implements IStack {
 
@@ -54,6 +54,11 @@ public class SqStack implements IStack {
      * @throws Exception
      */
     public void push(Object x) throws Exception {
+        if (top == stackElem.length) {
+            throw new Exception("栈已满");
+        } else {
+            stackElem[top++] = x;
+        }
 
     }
 
@@ -63,10 +68,14 @@ public class SqStack implements IStack {
      * @return
      */
     public Object pop() {
-        return null;
+        if (isEmpty()) {
+            return null;
+        } else {
+            return stackElem[--top];
+        }
     }
 
-    
+
     public void display() {
         for (int i = top - 1; i >= 0; i--) {
             System.out.println(stackElem[i].toString() + " ");
