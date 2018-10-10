@@ -21,8 +21,19 @@ public class LinkStack implements IStack {
         return top == null;
     }
 
+    /**
+     * 栈链的长度
+     *
+     * @return
+     */
     public int length() {
-        return 0;
+        Node p = top;
+        int length = 0;
+        while (p != null) {
+            p = p.next;
+            ++length;
+        }
+        return length;
     }
 
     /**
@@ -45,7 +56,9 @@ public class LinkStack implements IStack {
      * @throws Exception
      */
     public void push(Object x) throws Exception {
-
+        Node p = new Node(x);
+        p.next = top;
+        top = p;
     }
 
     /**
@@ -54,7 +67,15 @@ public class LinkStack implements IStack {
      * @return
      */
     public Object pop() {
-        return null;
+        if (isEmpty()) {
+            return null;
+        } else {
+            // 栈顶元素
+            Node p = top;
+            top = top.next;
+            return p.data;
+
+        }
     }
 
     public void display() {
