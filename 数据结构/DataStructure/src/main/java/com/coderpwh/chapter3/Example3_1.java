@@ -68,12 +68,13 @@ public class Example3_1 {
                     }
                 }
             }
+            System.out.println(S.isEmpty());
             if (!S.isEmpty()) {
                 throw new Exception("错误:java语句不合法!");
             }
             return true;
         } else {
-            throw new Exception("错误:java语句不合法!");
+            throw new Exception("错误:java语句为空!");
         }
 
     }
