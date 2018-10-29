@@ -19,6 +19,6 @@ public interface IQueue {
 
     public void offer(Object o) throws Exception;
 
-    public void display();
+    public void display() throws Exception;
 
 }
