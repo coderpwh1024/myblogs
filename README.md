@@ -1,7 +1,8 @@
 # myblogs
-This is my Programming Notes
 
->> mysql
->> spring 
->> Shiro
->>
+ <div align="center">  
+
+<img src="https://qiniu.epipe.cn/picture/blog.jpg" width=""/> 
+<br/>
+
+
