@@ -11,7 +11,7 @@ public class SqList implements Ilist {
     public SqList(int maxSie) {
         curLen = 0;
         listElem = new Object[maxSie];
-        curLen = maxSie;
+//        curLen = maxSie;
     }
 
     public void clear() {
