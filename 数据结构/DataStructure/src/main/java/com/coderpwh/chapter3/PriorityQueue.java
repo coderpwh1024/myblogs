@@ -27,16 +27,48 @@ public class PriorityQueue implements IQueue {
         return front == null;
     }
 
+    /**
+     * 求队列长度
+     *
+     * @return
+     */
     public int length() {
-        return 0;
+        Node p = front;
+        int length = 0;
+        while (p != null) {
+            p = p.next;
+            ++length;
+        }
+        return length;
     }
 
+    /**
+     * 读取队首元素
+     *
+     * @return
+     */
     public Object peek() {
-        return null;
+        if (front == null) {
+            return null;
+        } else {
+            return front.data;
+        }
+
     }
 
+    /**
+     * 出队
+     *
+     * @return
+     */
     public Object poll() {
-        return null;
+        if(front==null){
+            return  null;
+        }else{
+            Node p = front;
+            front = p.next;
+            return  p.data;
+        }
     }
 
     public void offer(Object o) throws Exception {
