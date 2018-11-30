@@ -113,6 +113,16 @@ public class PriorityQueue implements IQueue {
      * @throws Exception
      */
     public void display() throws Exception {
+        if (!isEmpty()) {
+            Node p = front;
+            while (p != rear.next) {
+                PriorityQData q = (PriorityQData) p.data;
+                System.out.println(q.elem + " " + q.priority);
+                p = p.next;
+            }
+        }else{
+            System.out.println("此队列为空!");
+        }
 
     }
 }
