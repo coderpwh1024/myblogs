@@ -6,6 +6,6 @@ package com.pwh.mycode.chap3;
  * @desc ${DESCRIPTION}
  **/
 public interface ApplePredicate {
-    
+
     public boolean test(Apple apple);
 }
