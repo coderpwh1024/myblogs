@@ -11,6 +11,12 @@ public class Trader {
 
     private String name;
 
+    
+     public Trader(String name, String city) {
+        this.name = name;
+        this.city = city;
+    }
+    
 
     public String getCity() {
         return city;
