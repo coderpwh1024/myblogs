@@ -1,7 +1,9 @@
-package com.pwh.mycode.chap7;
+ package com.pwh.mycode.chap7;
 
 import java.util.stream.LongStream;
 import java.util.stream.Stream;
+
+import java.util.stream.*;
 
 /**
  * 2 * @Author: pengwenhao
@@ -45,6 +47,20 @@ public class ParallelStreams {
 
     public static long parallelRangedSum(long n) {
         return LongStream.rangeClosed(1, n).parallel().reduce(Long::sum).getAsLong();
+    }
+
+
+    public static long sideEffectSum(long n) {
+        Accumulator accumulator = new Accumulator();
+        LongStream.rangeClosed(1, n).forEach(accumulator::add);
+        return accumulator.total;
+    }
+
+
+    public static long sideEffectParallelSum(long n) {
+        Accumulator accumulator = new Accumulator();
+        LongStream.rangeClosed(1, n).parallel().forEach(accumulator::add);
+        return accumulator.total;
     }
 
 
