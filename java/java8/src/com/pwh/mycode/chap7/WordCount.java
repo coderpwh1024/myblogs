@@ -1,4 +1,8 @@
-package com.pwh.mycode.chap7;
+ package com.pwh.mycode.chap7;
+
+import java.util.Spliterator;
+import java.util.stream.Stream;
+import java.util.stream.StreamSupport;
 
 /**
  * 2 * @Author: pengwenhao
@@ -15,6 +19,7 @@ public class WordCount {
     public static void main(String[] args) {
 
         System.out.println("Found " + countWordsIteratively(SENTENCE) + " words");
+        System.out.println("Found " + countWords(SENTENCE) + " words");
     }
 
 
@@ -39,6 +44,23 @@ public class WordCount {
 
         }
         return count;
+    }
+
+    public static int countWords(String s) {
+        Spliterator<Character> spliterator = new WordCounterSpliterator(s);
+        Stream<Character> stream = StreamSupport.stream(spliterator, true);
+        return countWords(stream);
+    }
+
+
+    private static int countWords(Stream<Character> stream) {
+
+        WordCounter wordCounter = stream.reduce(new WordCounter(0, true),
+                WordCounter::accumulate,
+                WordCounter::combine);
+
+        return wordCounter.getCounter();
+
     }
 
 
