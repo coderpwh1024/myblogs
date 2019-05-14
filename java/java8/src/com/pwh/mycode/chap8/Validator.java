@@ -31,8 +31,13 @@ public class Validator {
         System.out.println(b2);
 
         // Lambda 表达式
+        Validator numericValidators = new Validator((String s) -> s.matches("[a-z]+"));
+        boolean b1s = numericValidators.validate("aaa");
+        System.out.println(b1s);
 
-
+        Validator lowerCaseValidators = new Validator((String s) -> s.matches("\\d"));
+        boolean b2s = lowerCaseValidators.validate("ddd");
+        System.out.println(b2s);
 
 
     }
