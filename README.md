@@ -7,7 +7,7 @@
 
 ### 数据结构
 - [线性表](https://coderpwh.com/2018/10/05/xianxingbiao/)
-- [ArrayList扩容](http://coderpwh.com/2018/10/18/ArrayList%E6%89%A9%E5%AE%B9/)
+- [ArrayList扩容](https://coderpwh.com/2018/10/18/ArrayList/)
 
 
 ### 数据库
