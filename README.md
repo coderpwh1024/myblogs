@@ -15,6 +15,6 @@
 
 ### 微信(小程序)
 - [小程序客服会话](https://coderpwh.com/2019/04/10/xiaochengxukehuhuihua/)
-- [公众号个性化菜单栏实现](https://coderpwh.com/2019/04/14/gongzhonghaocaidanlan/)
+- [公众号个性化菜单栏](https://coderpwh.com/2019/04/14/gongzhonghaocaidanlan/)
 - [微信-小程序支付](https://coderpwh.com/2019/05/15/wx-pay/)
 - [微信-小程序退款](https://coderpwh.com/2019/05/19/wx-returen-money/)
