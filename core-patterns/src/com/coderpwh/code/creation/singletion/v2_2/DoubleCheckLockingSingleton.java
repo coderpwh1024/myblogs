@@ -1,6 +1,8 @@
 package com.coderpwh.code.creation.singletion.v2_2;
 
 /**
+ * // 双重检查锁定单例
+ *
  * @author coderpwh
  * @create 2019-08-18 15:08
  * @desc ${DESCRIPTION}

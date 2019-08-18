@@ -22,12 +22,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DoubleCheckLockingSingleton.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DoubleCheckLockingSingleton.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/coderpwh/code/creation/singletion/v2_2/DoubleCheckLockingSingleton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+            <state relative-caret-position="63">
+              <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BillPughSingleton.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/coderpwh/code/creation/singletion/v3/BillPughSingleton.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+              <folding>
+                <element signature="e#402#403#0" expanded="true" />
+                <element signature="e#444#445#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -54,6 +67,7 @@
         <option value="$PROJECT_DIR$/src/com/coderpwh/code/creation/singletion/v2/LazySingleton.java" />
         <option value="$PROJECT_DIR$/src/com/coderpwh/code/creation/singletion/v2_1/ThreadSafeSingleton.java" />
         <option value="$PROJECT_DIR$/src/com/coderpwh/code/creation/singletion/v2_2/DoubleCheckLockingSingleton.java" />
+        <option value="$PROJECT_DIR$/src/com/coderpwh/code/creation/singletion/v3/BillPughSingleton.java" />
       </list>
     </option>
   </component>
@@ -245,12 +259,12 @@
       <option name="presentableId" value="Default" />
       <updated>1566110300002</updated>
       <workItem from="1566110303049" duration="1308000" />
-      <workItem from="1566111624304" duration="1268000" />
+      <workItem from="1566111624304" duration="1631000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2576000" />
+    <option name="totallyTimeSpent" value="2939000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
@@ -365,9 +379,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/coderpwh/code/creation/singletion/v2_2/DoubleCheckLockingSingleton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+        <state relative-caret-position="63">
+          <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/coderpwh/code/creation/singletion/v3/BillPughSingleton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+          <folding>
+            <element signature="e#402#403#0" expanded="true" />
+            <element signature="e#444#445#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
