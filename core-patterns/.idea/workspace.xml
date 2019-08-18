@@ -12,32 +12,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="EagerSingleton.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/coderpwh/code/creation/singletion/v1/EagerSingleton.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding>
-                <element signature="e#338#339#0" expanded="true" />
-                <element signature="e#369#370#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StaticBlockSingleton.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/coderpwh/code/creation/singletion/v1_1/StaticBlockSingleton.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="23" column="9" lean-forward="false" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
-              <folding>
-                <element signature="e#536#537#0" expanded="true" />
-                <element signature="e#567#568#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="LazySingleton.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/coderpwh/code/creation/singletion/v2/LazySingleton.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -68,6 +42,7 @@
         <option value="$PROJECT_DIR$/src/com/coderpwh/code/creation/singleton/v1/EagerSingleton.java" />
         <option value="$PROJECT_DIR$/src/com/coderpwh/code/creation/singletion/v1_1/StaticBlockSingleton.java" />
         <option value="$PROJECT_DIR$/src/com/coderpwh/code/creation/singletion/v2/LazySingleton.java" />
+        <option value="$PROJECT_DIR$/src/com/coderpwh/code/creation/singletion/v2_1/ThreadSafeSingleton.java" />
       </list>
     </option>
   </component>
@@ -259,12 +234,12 @@
       <option name="presentableId" value="Default" />
       <updated>1566110300002</updated>
       <workItem from="1566110303049" duration="1308000" />
-      <workItem from="1566111624304" duration="69000" />
+      <workItem from="1566111624304" duration="389000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1377000" />
+    <option name="totallyTimeSpent" value="1697000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
@@ -358,6 +333,14 @@
             <element signature="e#536#537#0" expanded="true" />
             <element signature="e#567#568#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/coderpwh/code/creation/singletion/v2_1/ThreadSafeSingleton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-98">
+          <caret line="4" column="2" lean-forward="false" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
