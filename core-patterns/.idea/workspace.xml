@@ -12,60 +12,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="LazySingleton.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/coderpwh/code/creation/singletion/v2/LazySingleton.java">
+      <file leaf-file-name="DemoSingleton.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/coderpwh/code/creation/singletion/deserialization/DemoSingleton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DoubleCheckLockingSingleton.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/coderpwh/code/creation/singletion/v2_2/DoubleCheckLockingSingleton.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BillPughSingleton.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/coderpwh/code/creation/singletion/v3/BillPughSingleton.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+            <state relative-caret-position="460">
+              <caret line="24" column="29" lean-forward="false" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
               <folding>
-                <element signature="e#402#403#0" expanded="true" />
-                <element signature="e#444#445#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EnumSingleton.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/coderpwh/code/creation/singletion/v4/EnumSingleton.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" column="2" lean-forward="false" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
-              <folding>
-                <element signature="e#225#226#0" expanded="true" />
-                <element signature="e#289#290#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestEnumSingleton.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/coderpwh/code/creation/singletion/v4/TestEnumSingleton.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-              <folding>
-                <element signature="e#208#209#0" expanded="true" />
-                <element signature="e#255#256#0" expanded="true" />
+                <element signature="e#470#471#0" expanded="true" />
+                <element signature="e#512#513#0" expanded="true" />
+                <element signature="e#550#551#0" expanded="true" />
+                <element signature="e#586#587#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -97,6 +53,7 @@
         <option value="$PROJECT_DIR$/src/com/coderpwh/code/creation/singletion/v3/BillPughSingleton.java" />
         <option value="$PROJECT_DIR$/src/com/coderpwh/code/creation/singletion/v4/EnumSingleton.java" />
         <option value="$PROJECT_DIR$/src/com/coderpwh/code/creation/singletion/v4/TestEnumSingleton.java" />
+        <option value="$PROJECT_DIR$/src/com/coderpwh/code/creation/singletion/deserialization/DemoSingleton.java" />
       </list>
     </option>
   </component>
@@ -116,8 +73,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="676" />
-    <option name="width" value="697" />
+    <option name="x" value="320" />
+    <option name="y" value="-20" />
+    <option name="width" value="814" />
     <option name="height" value="735" />
   </component>
   <component name="ProjectView">
@@ -135,10 +93,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -170,7 +127,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="code" type="462c0819:PsiDirectoryNode" />
               <item name="singletion" type="462c0819:PsiDirectoryNode" />
-              <item name="v4" type="462c0819:PsiDirectoryNode" />
+              <item name="deserialization" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="core-patterns" type="b2602c69:ProjectViewProjectNode" />
@@ -178,13 +135,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="code" type="462c0819:PsiDirectoryNode" />
               <item name="singletion" type="462c0819:PsiDirectoryNode" />
-              <item name="v4" type="462c0819:PsiDirectoryNode" />
-              <item name="EnumSingleton" type="1a9f42e2:ClassTreeNode" />
+              <item name="deserialization" type="462c0819:PsiDirectoryNode" />
+              <item name="DemoSingleton" type="1a9f42e2:ClassTreeNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -329,12 +287,13 @@
       <option name="presentableId" value="Default" />
       <updated>1566110300002</updated>
       <workItem from="1566110303049" duration="1308000" />
-      <workItem from="1566111624304" duration="1801000" />
+      <workItem from="1566111624304" duration="2399000" />
+      <workItem from="1566224164575" duration="431000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3109000" />
+    <option name="totallyTimeSpent" value="4138000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
@@ -342,18 +301,17 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293718" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17328244" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.103053436" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -365,6 +323,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -380,14 +339,59 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/coderpwh/code/creation/singletion/v2/LazySingleton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/coderpwh/code/creation/singletion/v2_2/DoubleCheckLockingSingleton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/coderpwh/code/creation/singletion/v3/BillPughSingleton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+          <folding>
+            <element signature="e#402#403#0" expanded="false" />
+            <element signature="e#444#445#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/coderpwh/code/creation/singletion/v4/EnumSingleton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="2" lean-forward="false" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+          <folding>
+            <element signature="e#225#226#0" expanded="false" />
+            <element signature="e#289#290#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/coderpwh/code/creation/singletion/v4/TestEnumSingleton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+          <folding>
+            <element signature="e#208#209#0" expanded="false" />
+            <element signature="e#255#256#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/coderpwh/code/creation/singletion/v1/EagerSingleton.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="e#338#339#0" expanded="false" />
-            <element signature="e#369#370#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -395,10 +399,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
           <caret line="23" column="9" lean-forward="false" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
-          <folding>
-            <element signature="e#536#537#0" expanded="false" />
-            <element signature="e#567#568#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -414,10 +414,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="e#338#339#0" expanded="false" />
-            <element signature="e#369#370#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -425,10 +421,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
           <caret line="23" column="9" lean-forward="false" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
-          <folding>
-            <element signature="e#536#537#0" expanded="false" />
-            <element signature="e#567#568#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -461,8 +453,8 @@
         <state relative-caret-position="63">
           <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
           <folding>
-            <element signature="e#402#403#0" expanded="true" />
-            <element signature="e#444#445#0" expanded="true" />
+            <element signature="e#402#403#0" expanded="false" />
+            <element signature="e#444#445#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -472,19 +464,32 @@
         <state relative-caret-position="84">
           <caret line="4" column="2" lean-forward="false" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
           <folding>
-            <element signature="e#225#226#0" expanded="true" />
-            <element signature="e#289#290#0" expanded="true" />
+            <element signature="e#225#226#0" expanded="false" />
+            <element signature="e#289#290#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/coderpwh/code/creation/singletion/v4/TestEnumSingleton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        <state relative-caret-position="231">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
           <folding>
-            <element signature="e#208#209#0" expanded="true" />
-            <element signature="e#255#256#0" expanded="true" />
+            <element signature="e#208#209#0" expanded="false" />
+            <element signature="e#255#256#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/coderpwh/code/creation/singletion/deserialization/DemoSingleton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="24" column="29" lean-forward="false" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+          <folding>
+            <element signature="e#470#471#0" expanded="true" />
+            <element signature="e#512#513#0" expanded="true" />
+            <element signature="e#550#551#0" expanded="true" />
+            <element signature="e#586#587#0" expanded="true" />
           </folding>
         </state>
       </provider>
