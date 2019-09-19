@@ -1,8 +1,8 @@
 # myblogs
 
  
-<img src="https://qiniu.epipe.cn/picture/2019-06-01_夕阳余海波.jpg" width="800" height="550"/> 
-![夕阳](https://qiniu.epipe.cn/picture/2019-06-01_夕阳余海波.jpg)
+
+![img](https://qiniu.epipe.cn/picture/2019-06-01_夕阳余海波.jpg)
 <br/>
  
 
