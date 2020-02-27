@@ -2,7 +2,7 @@ package com.pwh.mycode.chap2;
 
 /**
  *  重量比较
- * 2 * @Author: pengwenhao
+ * 2 * @Author: coderpwh
  * 3 * @Date: 2019/3/26 15:51
  * 4
  */
