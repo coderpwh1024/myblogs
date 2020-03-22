@@ -26,11 +26,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="ListTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ListTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/pwh/mycode/chap14/ListTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="483">
               <caret line="21" column="30" lean-forward="false" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ListTest2.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/pwh/mycode/chap14/ListTest2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -126,6 +138,7 @@
         <option value="$PROJECT_DIR$/src/com/pwh/mycode/chap13/ReferenceCountingGC.java" />
         <option value="$PROJECT_DIR$/src/com/pwh/mycode/chap13/FinalizeEscapeGC.java" />
         <option value="$PROJECT_DIR$/src/com/pwh/mycode/chap14/ListTest.java" />
+        <option value="$PROJECT_DIR$/src/com/pwh/mycode/chap14/ListTest2.java" />
       </list>
     </option>
   </component>
@@ -181,7 +194,15 @@
               <item name="java8" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="mycode" type="462c0819:PsiDirectoryNode" />
-              <item name="chap13" type="462c0819:PsiDirectoryNode" />
+              <item name="chap14" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java8" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="mycode" type="462c0819:PsiDirectoryNode" />
+              <item name="chap14" type="462c0819:PsiDirectoryNode" />
+              <item name="ListTest" type="1a9f42e2:ClassTreeNode" />
             </path>
           </expand>
           <select />
@@ -219,7 +240,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ListTest">
+  <component name="RunManager" selected="Application.ListTest2">
     <configuration name="DirectMemoryOOM" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -277,14 +298,14 @@
       <module name="java8" />
       <envs />
     </configuration>
-    <configuration name="ReferenceCountingGC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="ListTest2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.pwh.mycode.chap13.*" />
+          <option name="PATTERN" value="com.pwh.mycode.chap14.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.pwh.mycode.chap13.ReferenceCountingGC" />
+      <option name="MAIN_CLASS_NAME" value="com.pwh.mycode.chap14.ListTest2" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -296,14 +317,14 @@
       <module name="java8" />
       <envs />
     </configuration>
-    <configuration name="RuntimeConstantPoolOOM" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="ReferenceCountingGC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.pwh.mycode.chap12.*" />
+          <option name="PATTERN" value="com.pwh.mycode.chap13.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.pwh.mycode.chap12.RuntimeConstantPoolOOM" />
+      <option name="MAIN_CLASS_NAME" value="com.pwh.mycode.chap13.ReferenceCountingGC" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -331,19 +352,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.RuntimeConstantPoolOOM" />
-      <item index="1" class="java.lang.String" itemvalue="Application.DirectMemoryOOM" />
-      <item index="2" class="java.lang.String" itemvalue="Application.ReferenceCountingGC" />
-      <item index="3" class="java.lang.String" itemvalue="Application.FinalizeEscapeGC" />
-      <item index="4" class="java.lang.String" itemvalue="Application.ListTest" />
+      <item index="0" class="java.lang.String" itemvalue="Application.DirectMemoryOOM" />
+      <item index="1" class="java.lang.String" itemvalue="Application.ReferenceCountingGC" />
+      <item index="2" class="java.lang.String" itemvalue="Application.FinalizeEscapeGC" />
+      <item index="3" class="java.lang.String" itemvalue="Application.ListTest" />
+      <item index="4" class="java.lang.String" itemvalue="Application.ListTest2" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.ListTest" />
-        <item index="1" class="java.lang.String" itemvalue="Application.FinalizeEscapeGC" />
-        <item index="2" class="java.lang.String" itemvalue="Application.ReferenceCountingGC" />
-        <item index="3" class="java.lang.String" itemvalue="Application.DirectMemoryOOM" />
-        <item index="4" class="java.lang.String" itemvalue="Application.RuntimeConstantPoolOOM" />
+        <item index="0" class="java.lang.String" itemvalue="Application.ListTest2" />
+        <item index="1" class="java.lang.String" itemvalue="Application.ListTest" />
+        <item index="2" class="java.lang.String" itemvalue="Application.FinalizeEscapeGC" />
+        <item index="3" class="java.lang.String" itemvalue="Application.ReferenceCountingGC" />
+        <item index="4" class="java.lang.String" itemvalue="Application.DirectMemoryOOM" />
       </list>
     </recent_temporary>
   </component>
@@ -389,15 +410,16 @@
       <workItem from="1583991771199" duration="1994000" />
       <workItem from="1584070856936" duration="1519000" />
       <workItem from="1584074438107" duration="5185000" />
-      <workItem from="1584863892467" duration="1298000" />
+      <workItem from="1584863892467" duration="2482000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53936000" />
+    <option name="totallyTimeSpent" value="55120000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -408,7 +430,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24448217" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2801358" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26485568" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -446,13 +468,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/pwh/mycode/chap3/Sorting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/pwh/mycode/chap4/Dish.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="490">
@@ -781,8 +796,8 @@
         <state relative-caret-position="23">
           <caret line="16" column="27" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="27" />
           <folding>
-            <element signature="e#226#227#0" expanded="true" />
-            <element signature="e#286#287#0" expanded="true" />
+            <element signature="e#226#227#0" expanded="false" />
+            <element signature="e#286#287#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -799,6 +814,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
           <caret line="21" column="30" lean-forward="false" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/pwh/mycode/chap14/ListTest2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
