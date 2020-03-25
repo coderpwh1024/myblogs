@@ -46,7 +46,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CeilingFan.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CeilingFan.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/pwh/mycode/chap15/simplefactory/CeilingFan.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
@@ -57,6 +57,16 @@
                 <element signature="e#323#324#0" expanded="true" />
                 <element signature="e#394#395#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IFanFactory.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/pwh/mycode/chap15/simplefactory/IFanFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -147,6 +157,7 @@
         <option value="$PROJECT_DIR$/src/com/pwh/mycode/chap15/simplefactory/IFan.java" />
         <option value="$PROJECT_DIR$/src/com/pwh/mycode/chap15/simplefactory/FanType.java" />
         <option value="$PROJECT_DIR$/src/com/pwh/mycode/chap15/simplefactory/CeilingFan.java" />
+        <option value="$PROJECT_DIR$/src/com/pwh/mycode/chap15/simplefactory/IFanFactory.java" />
       </list>
     </option>
   </component>
@@ -156,7 +167,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-244" />
     <option name="y" value="42" />
     <option name="width" value="1048" />
@@ -413,15 +424,15 @@
       <workItem from="1584863892467" duration="4550000" />
       <workItem from="1584929289151" duration="3411000" />
       <workItem from="1585016802800" duration="1344000" />
-      <workItem from="1585103733836" duration="1492000" />
+      <workItem from="1585103733836" duration="1733000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63435000" />
+    <option name="totallyTimeSpent" value="63676000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -471,13 +482,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/pwh/mycode/chap2/AppleColorPredicate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/pwh/mycode/chap7/WordCounter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -839,6 +843,14 @@
             <element signature="e#323#324#0" expanded="true" />
             <element signature="e#394#395#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/pwh/mycode/chap15/simplefactory/IFanFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
