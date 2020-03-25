@@ -36,12 +36,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FanType.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FanType.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/pwh/mycode/chap15/simplefactory/FanType.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
               <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CeilingFan.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/pwh/mycode/chap15/simplefactory/CeilingFan.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="15" column="61" lean-forward="false" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
+              <folding>
+                <element signature="e#209#210#0" expanded="true" />
+                <element signature="e#279#280#0" expanded="true" />
+                <element signature="e#323#324#0" expanded="true" />
+                <element signature="e#394#395#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -131,6 +146,7 @@
         <option value="$PROJECT_DIR$/src/com/pwh/mycode/chap14/Box.java" />
         <option value="$PROJECT_DIR$/src/com/pwh/mycode/chap15/simplefactory/IFan.java" />
         <option value="$PROJECT_DIR$/src/com/pwh/mycode/chap15/simplefactory/FanType.java" />
+        <option value="$PROJECT_DIR$/src/com/pwh/mycode/chap15/simplefactory/CeilingFan.java" />
       </list>
     </option>
   </component>
@@ -397,12 +413,12 @@
       <workItem from="1584863892467" duration="4550000" />
       <workItem from="1584929289151" duration="3411000" />
       <workItem from="1585016802800" duration="1344000" />
-      <workItem from="1585103733836" duration="959000" />
+      <workItem from="1585103733836" duration="1492000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62902000" />
+    <option name="totallyTimeSpent" value="63435000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
@@ -455,13 +471,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/pwh/mycode/chap2/AppleWeightPredicate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/pwh/mycode/chap2/AppleColorPredicate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -817,6 +826,19 @@
         <state relative-caret-position="345">
           <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/pwh/mycode/chap15/simplefactory/CeilingFan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="61" lean-forward="false" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
+          <folding>
+            <element signature="e#209#210#0" expanded="true" />
+            <element signature="e#279#280#0" expanded="true" />
+            <element signature="e#323#324#0" expanded="true" />
+            <element signature="e#394#395#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
