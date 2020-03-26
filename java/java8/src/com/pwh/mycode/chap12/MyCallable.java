@@ -11,13 +11,16 @@ import java.util.concurrent.FutureTask;
  **/
 public class MyCallable implements Callable<Integer> {
 
+    public MyCallable(String s) {
+    }
+
     @Override
     public Integer call() throws Exception {
         return 123;
     }
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-        MyCallable mc = new MyCallable();
+        MyCallable mc = new MyCallable("");
 
         FutureTask<Integer> ft = new FutureTask<>(mc);
 
