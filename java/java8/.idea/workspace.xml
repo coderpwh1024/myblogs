@@ -26,14 +26,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Folder.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Folder.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/pwh/mycode/chap15/proxy/Folder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="161">
+              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding>
                 <element signature="e#212#213#0" expanded="true" />
                 <element signature="e#279#280#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FolderProxy.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/pwh/mycode/chap15/proxy/FolderProxy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="394">
+              <caret line="24" column="70" lean-forward="false" selection-start-line="24" selection-start-column="70" selection-end-line="24" selection-end-column="70" />
+              <folding>
+                <element signature="e#236#237#0" expanded="true" />
+                <element signature="e#268#269#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -78,7 +91,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/pwh/mycode/chap7/Accumulator.java" />
         <option value="$PROJECT_DIR$/src/com/pwh/mycode/chap8/DemoTesyt.java" />
         <option value="$PROJECT_DIR$/src/com/pwh/mycode/chap8/Test.java" />
         <option value="$PROJECT_DIR$/src/com/pwh/mycode/chap9/Student.java" />
@@ -129,6 +141,7 @@
         <option value="$PROJECT_DIR$/src/com/pwh/mycode/chap15/proxy/User.java" />
         <option value="$PROJECT_DIR$/src/com/pwh/mycode/chap15/proxy/IFolder.java" />
         <option value="$PROJECT_DIR$/src/com/pwh/mycode/chap15/proxy/Folder.java" />
+        <option value="$PROJECT_DIR$/src/com/pwh/mycode/chap15/proxy/FolderProxy.java" />
       </list>
     </option>
   </component>
@@ -138,7 +151,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-127" />
     <option name="y" value="-28" />
     <option name="width" value="1048" />
@@ -405,15 +418,15 @@
       <workItem from="1585016802800" duration="1344000" />
       <workItem from="1585103733836" duration="3576000" />
       <workItem from="1585200317131" duration="5216000" />
-      <workItem from="1585288953438" duration="775000" />
+      <workItem from="1585288953438" duration="1902000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71510000" />
+    <option name="totallyTimeSpent" value="72637000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -463,13 +476,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/pwh/mycode/chap10/MarkString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/pwh/mycode/chap10/SubStringCons.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-67">
@@ -833,11 +839,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/pwh/mycode/chap15/proxy/Folder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="161">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
             <element signature="e#212#213#0" expanded="true" />
             <element signature="e#279#280#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/pwh/mycode/chap15/proxy/FolderProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="24" column="70" lean-forward="false" selection-start-line="24" selection-start-column="70" selection-end-line="24" selection-end-column="70" />
+          <folding>
+            <element signature="e#236#237#0" expanded="true" />
+            <element signature="e#268#269#0" expanded="true" />
           </folding>
         </state>
       </provider>
