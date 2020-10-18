@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="shiro:war">
-    <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="maven-ssm-shiro.war">
-      <element id="artifact" artifact-name="shiro:war exploded" />
-    </root>
-  </artifact>
-</component>
