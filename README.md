@@ -17,3 +17,4 @@
 - [微信-小程序退款](https://coderpwh.net/2019/05/19/wx-returen-money/)
 
 ### 消息中间件
+- [RabbitMQ死信队列](https://coderpwh.net/2021/02/01/RabbitMQ--Dead/)
