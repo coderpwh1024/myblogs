@@ -19,3 +19,4 @@
 ### 消息中间件
 - [RabbitMQ死信队列](https://coderpwh.net/2021/02/01/RabbitMQ--Dead/)
 - [RabbitMQ延时队列](https://coderpwh.net/2021/02/01/RabbitMQ--Dead/)
+- [RabbitMQ消息幂等性](https://coderpwh.net/2021/02/01/RabbitMQ--Dead/)
