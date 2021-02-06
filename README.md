@@ -20,3 +20,4 @@
 - [RabbitMQ死信队列](https://coderpwh.net/2021/02/01/RabbitMQ--Dead/)
 - [RabbitMQ延时队列](https://coderpwh.net/2021/02/04/RabbitMQ--time/)
 - [RabbitMQ消息幂等性](https://coderpwh.net/2021/02/05/RabbitMQ--idempotence/)
+- [RabbitMQ削峰](https://coderpwh.net/2021/02/05/RabbitMQ--idempotence/)
