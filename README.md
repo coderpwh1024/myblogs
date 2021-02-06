@@ -21,3 +21,8 @@
 - [RabbitMQ延时队列](https://coderpwh.net/2021/02/04/RabbitMQ--time/)
 - [RabbitMQ消息幂等性](https://coderpwh.net/2021/02/05/RabbitMQ--idempotence/)
 - [RabbitMQ削峰](https://coderpwh.net/2021/02/05/RabbitMQ--idempotence/)
+- [究竟什么时候该使用MQ ](https://mp.weixin.qq.com/s/_kXoRBAotb4GXoDTqTObYQ) 
+- [MQ不丢消息，究竟是怎么实现的？](https://mp.weixin.qq.com/s/1-weXF5iL6i13IhSrrIOfg)  
+- [MQ 究竟如何保证消息幂等？](https://mp.weixin.qq.com/s/lh1yLcKHDLSCatdA9EY6wQ)
+- [MQ，究竟如何做到削峰填谷？](https://mp.weixin.qq.com/s/2gqajSPgwF67hrl9alRLJg)
+- [MQ，互联网架构解耦神器](https://mp.weixin.qq.com/s/2PFd4xQ9F9S_9g23WtyFGw)
