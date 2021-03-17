@@ -2,7 +2,7 @@
 
  
 
-![img](https://qiniu.epipe.cn/photos/2020-05-01_%E5%A4%A7%E9%B9%8F%E5%8F%A4%E5%9F%8E%E4%B8%80%E8%A1%8C.jpg)
+ 
 <img src="https://qiniu.epipe.cn/photos/2020-05-01_%E5%A4%A7%E9%B9%8F%E5%8F%A4%E5%9F%8E%E4%B8%80%E8%A1%8C.jpg">
 <br/>
  
