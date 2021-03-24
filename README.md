@@ -4,6 +4,7 @@
 
  
 <img src="https://qiniu.epipe.cn/photos/2020-05-01_大鹏古城一行.jpg">
+![avatar](https://qiniu.epipe.cn/photos/2020-05-01_大鹏古城一行.jpg)
 <br/>
  
 
