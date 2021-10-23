@@ -26,5 +26,3 @@
 - [MQ 究竟如何保证消息幂等？](https://mp.weixin.qq.com/s/lh1yLcKHDLSCatdA9EY6wQ)
 - [MQ，究竟如何做到削峰填谷？](https://mp.weixin.qq.com/s/2gqajSPgwF67hrl9alRLJg)
 - [MQ，互联网架构解耦神器](https://mp.weixin.qq.com/s/2PFd4xQ9F9S_9g23WtyFGw)
-
-哥的代码
