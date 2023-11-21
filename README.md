@@ -7,6 +7,17 @@
  
 ### 信息系统开发与管理
 - [信息系统开发方法概述](https://coderpwh.net/2023/03/01/xi-tong-kai-fa-fang-fa-gai-shu/)
+- [信息系统开发与管理第三章](https://coderpwh.net/2023/03/12/xin-xi-xi-tong-kai-fa-yu-guan-li-di-san-zhang/)
+- [信息系统开发与管理第四章](https://coderpwh.net/2023/03/19/xin-xi-xi-tong-kai-fa-yu-guan-li-di-si-zhang/)
+- [信息系统开发与管理第五章](https://coderpwh.net/2023/03/25/xin-xi-xi-tong-kai-fa-yu-guan-li-di-wu-zhang/)
+- [信息系统开发与管理第六章](https://coderpwh.net/2023/04/01/xin-xi-xi-tong-kai-fa-yu-guan-li-di-liu-zhang/)
+
+- [信息系统开发与管理第七章](https://coderpwh.net/2023/04/02/xin-xi-xi-tong-kai-fa-yu-guan-li-di-qi-zhang/)
+
+- [信息系统开发与管理第八章](https://coderpwh.net/2023/04/09/xin-xi-xi-tong-kai-fa-yu-guan-li-di-ba-zhang/)
+
+
+
 
 ### 数据结构
 - [线性表](https://coderpwh.net/2018/10/05/xianxingbiao/)
